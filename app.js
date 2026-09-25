@@ -338,12 +338,23 @@ form.addEventListener(
 
       ) {
 
-        const text =
-          result.stato === 'CONFERMATO'
+        
+const dataLeggibile =
+  date === '2026-10-10'
+    ? 'sabato 10 ottobre 2026'
+    : 'venerdì 16 ottobre 2026';
 
-            ? 'Iscrizione confermata! Ti aspettiamo a Piazza Mazzini alle ore 15:00.'
+const testoAccompagnatore = hasCompanion.checked
+  ? ` Abbiamo registrato anche l’accompagnatore: ${companionName.value.trim()}.`
+  : '';
 
-            : 'Sei in lista d’attesa. Ti contatteremo se si libera un posto.';
+const text =
+  result.stato === 'CONFERMATO'
+
+    ? `Iscrizione confermata per ${dataLeggibile} alle ore 15:00, a Piazza Mazzini (Roma).${testoAccompagnatore} In caso di maltempo l’incontro potrà essere rinviato.`
+
+    : `Sei in lista d’attesa per ${dataLeggibile} alle ore 15:00, a Piazza Mazzini (Roma).${testoAccompagnatore} Ti contatteremo se si libera un posto.`;
+
 
         form.reset();
 
