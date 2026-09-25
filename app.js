@@ -3,7 +3,7 @@
 
 // ALBERI IN PIAZZA — COLLEGAMENTO SUPABASE
 
-const URL_DB = 'https://vtbrmisawmnzpjjjsmrw.supabase.co';
+const URL_DB = 'https://vtbrmisawmnzpjijsmrw.supabase.co';
 
 const CHIAVE_PUBBLICA =
   'sb_publishable_ajJUBws7lyz_yeolvOjdBg_IZggrnPc';
