@@ -201,7 +201,7 @@ async function refreshAvailability() {
 
           ? 'Posti esauriti · lista d’attesa aperta'
 
-          : `${event.posti_residui} posti disponibili su ${event.capienza}`;
+         : `${event.posti_residui} posti disponibili`;
 
     }
 
